@@ -5,3 +5,8 @@ $num = 12;
 
 // TODO: ここにコードを追記
 echo $num;
+if ($num >= 5 && $num <= 15) {
+    echo "範囲内です\n";
+} else {
+    echo "範囲外です\n";
+}

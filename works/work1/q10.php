@@ -6,3 +6,12 @@ $num = -3;
 
 // TODO: ここにコードを追記
 echo $num;
+if ($num == 0) {
+    echo "ゼロです";
+}
+if ($num > 0) {
+    echo "正の数です";
+}
+if ($num < 0) {
+    echo "負の数です";
+}

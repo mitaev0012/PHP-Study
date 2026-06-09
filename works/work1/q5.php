@@ -5,3 +5,8 @@ $num = 9;
 
 // TODO: ここにコードを追記
 echo $num;
+if ($num % 3 == 0) {
+    echo "3の倍数です\n";
+} else {
+    echo "3の倍数ではありません\n";
+}
