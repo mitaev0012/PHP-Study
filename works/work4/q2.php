@@ -18,6 +18,7 @@ if (introduce("佐藤", 0) === "佐藤さんは0歳です") {
 // ↑確認用コード↑(編集しないこと)
 
 // TODO: 引数と戻り値に型を付けて完成させなさい
-function introduce($name, $age) {
+function introduce(string $name, string $age): string 
+ {
     return $name . "さんは" . $age . "歳です";
 }

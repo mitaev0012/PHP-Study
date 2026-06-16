@@ -18,6 +18,7 @@ if (add(-1, 1) === 0) {
 // ↑確認用コード↑(編集しないこと)
 
 // TODO: 引数と戻り値に型を付けて完成させなさい
-function add($a, $b) {
+function add(int $a, int $b): int 
+{
     return $a + $b;
 }

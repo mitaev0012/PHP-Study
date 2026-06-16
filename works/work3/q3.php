@@ -6,7 +6,7 @@ $values = array(1, 2, 3, 4, 5);
 $result = average($values);
 echo "平均値: " . $result . "\n";
 
-// ↓確認用コード↓(編集しないこと)
+// ↓確認用コード↓(編集しないこと)ph
 $values = array(1, 2, 3, 4, 5);
 
 if (average($values) === 3) {
@@ -34,4 +34,5 @@ if (average($values) === 0) {
 
 // ここにコードを追記
 function average($values) {
+    return array_sum($values) / count($values);
 }

@@ -24,6 +24,7 @@ if (multiply(2,0) === 0) {
 // ↑確認用コード↑(編集しないこと)
 
 // ここにコードを追記
-function multiply() {
+function multiply($num1,$num2) {
+    return ($num1 * $num2);
 }
 

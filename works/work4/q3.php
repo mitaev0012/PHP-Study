@@ -25,6 +25,7 @@ if (truncate(0.0) === 0) {
 // ↑確認用コード↑(編集しないこと)
 
 // TODO: 引数と戻り値に型を付けて完成させなさい
-function truncate($value) {
+function truncate(float $value):int 
+ {
     return (int)$value;
 }
