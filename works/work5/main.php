@@ -14,7 +14,7 @@ $mainUser->setAge(30);
 $mainUser->getOlder();
 
 showUserStatus($mainUser);
-showUserStatus($subUser);
+//showUserStatus($subUser);
 
 
 // バリデーションの確認用(問題2ができたら以下のコメントを外して実行してみよう)

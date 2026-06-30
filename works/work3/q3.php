@@ -10,29 +10,30 @@ echo "平均値: " . $result . "\n";
 $values = array(1, 2, 3, 4, 5);
 
 if (average($values) === 3) {
-    echo("テスト1:OK\n");
+    echo ("テスト1:OK\n");
 } else {
-    echo("テスト1:NG\n");
+    echo ("テスト1:NG\n");
 }
 
 $values = array(0);
 
 if (average($values) === 0) {
-    echo("テスト2:OK\n");
+    echo ("テスト2:OK\n");
 } else {
-    echo("テスト2:NG\n");
+    echo ("テスト2:NG\n");
 }
 
 $values = array(10, -10);
 
 if (average($values) === 0) {
-    echo("テスト3:OK\n");
+    echo ("テスト3:OK\n");
 } else {
-    echo("テスト3:NG\n");
+    echo ("テスト3:NG\n");
 }
 // ↑確認用コード↑(編集しないこと)
 
 // ここにコードを追記
-function average($values) {
+function average($values)
+{
     return array_sum($values) / count($values);
 }
