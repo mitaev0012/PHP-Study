@@ -4,6 +4,7 @@
 // 点数の配列を受け取り、平均点を返す関数
 function calcAverage($scores)
 {
+    return array_sum($scores) / count($scores);
     // ここにコードを追記
 }
 
@@ -14,6 +15,16 @@ function calcAverage($scores)
 // 50未満: "不可"
 function getGrade($average)
 {
+    if ($average >= 90) {
+        return "優\n";
+    } elseif ($average >= 70) {
+        return "良\n";
+    } elseif ($average >= 50) {
+        return "可\n";
+    } else {
+        return "不可\n";
+    }
+
     // ここにコードを追記
 }
 
@@ -22,7 +33,15 @@ function getGrade($average)
 // ※ calcAverage関数を使うこと
 function getPassedStudents($students)
 {
-    // ここにコードを追記
+    $passedStudents = array();
+    foreach ($students as $student) {
+        $avg = calcAverage($student["scores"]);
+
+        if ($avg >= 60) {
+            $passedStudents[] = $student;
+        }
+    }
+    return $passedStudents; // ここにコードを追記
 }
 
 // 表示用関数(編集しないこと)

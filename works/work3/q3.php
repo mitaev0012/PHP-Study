@@ -35,5 +35,12 @@ if (average($values) === 0) {
 // ここにコードを追記
 function average($values)
 {
-    return array_sum($values) / count($values);
+    $hari = 0;
+    for ($i = 0; $i < count($values); $i++) {
+        $sum += $values[$i];
+    }
+
+    return $sum / count($values);
+
+    //return array_sum($values) / count($values);
 }

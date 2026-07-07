@@ -5,8 +5,8 @@ class User
     // ↓フィールド============================
     private int $id;
     private string $name;
-    private int $age;
-    private string $address;
+    private int $age = 0;
+    private string $address = "";
 
     // ↑フィールド============================
 
